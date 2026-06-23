@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.Signup">
+   <children>
+      <ImageView fx:id="bgImage" cache="true" pickOnBounds="true" preserveRatio="false" />
+      <Pane fx:id="overlay" prefHeight="447.0" prefWidth="600.0" style="-fx-background-color: rgba(0,0,0,0.45);" />
+      <VBox maxWidth="368.0" prefHeight="250.0" prefWidth="368.0" spacing="15">
+         <children>
+            <Button fx:id="backToLogin" mnemonicParsing="false" onAction="#onBackToLogin" style="-fx-background-color: #ff4b2b; -fx-text-fill: white;" text="← Back" />
+            <Label alignment="CENTER" style="-fx-font-size: 28px; -fx-text-fill: white;-fx-font-weight: bold;" text="FitSync" />
+            <HBox spacing="19">
+               <children>
+                  <Label style="-fx-text-fill: white;" text="Username" />
+                  <TextField fx:id="usernameField" promptText="Enter Username" />
+               </children>
+            </HBox>
+            <HBox spacing="22">
+               <children>
+                  <Label style="-fx-text-fill: white;" text="Password" />
+                  <PasswordField fx:id="passwordField" promptText="Enter Password" />
+               </children>
+            </HBox>
+            <HBox spacing="50">
+               <children>
+                  <Label style="-fx-text-fill: white;" text="Age" />
+                  <TextField fx:id="ageField" promptText="Enter Age" />
+               </children>
+            </HBox>
+            <HBox spacing="32">
+               <children>
+                  <Label style="-fx-text-fill: white;" text="Weight" />
+                  <TextField fx:id="weightField" promptText="Enter Weight" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="205.0" spacing="32">
+               <children>
+                  <Label style="-fx-text-fill: white;" text="Gender" />
+                  <ChoiceBox fx:id="genderField" prefWidth="150.0" value="Male" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="70.0" spacing="12">
+               <children>
+                  <Label style="-fx-text-fill: white;" text="Height(cm)" />
+                  <TextField fx:id="heightField" promptText="Enter Height" />
+               </children>
+            </HBox>
+            <Button fx:id="createAccount" onAction="#onAccount" style="-fx-background-color: #ff4b2b; -fx-text-fill: white;" text="Create Account" />
+            <Label fx:id="statusLabel" />
+         </children>
+      </VBox>
+   </children>
+</StackPane>

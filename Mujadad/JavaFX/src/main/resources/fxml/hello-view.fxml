@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="rootPane" styleClass="dash-back" stylesheets="@../css/hello-view.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.Dashboard">
+   <top>
+      <HBox alignment="CENTER_LEFT" style="-fx-padding: 20;">
+         <children>
+            <Label fx:id="welcomeLabel" styleClass="title-label" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="19.0" />
+               </font></Label>
+         </children>
+      </HBox>
+   </top>
+
+   <left>
+      <VBox fx:id="vbox" alignment="TOP_CENTER" maxWidth="149.0" minWidth="140" prefHeight="460.0" prefWidth="149.0" spacing="20" styleClass="side-bar">
+
+         <ImageView fx:id="snkPic" fitHeight="90" fitWidth="90" preserveRatio="true" />
+
+         <Label fx:id="user" styleClass="username-label" />
+
+         <Button fx:id="dashboardButton" onAction="#onDashboard" styleClass="side-btn" text="Dashboard" />
+         <Button fx:id="progressButton" onAction="#onProgress" styleClass="side-btn" text="Progress" />
+         <Button fx:id="caloriesButton" onAction="#onBMI" styleClass="side-btn" text="BMI Calculator" />
+         <Button fx:id="themeButton" onAction="#onToggleTheme" styleClass="theme-btn" text="🎨 Theme: Dark" />
+         <Button mnemonicParsing="false" onAction="#onResetCalories" styleClass="side-btn" text="Reset Progress" />
+         <Region prefHeight="250.0" prefWidth="109.0" />
+
+         <Button fx:id="logoutButton" onAction="#onLogout" styleClass="logout-btn" text="Logout" />
+      </VBox>
+   </left>
+
+   <center>
+      <TilePane fx:id="tilePane" alignment="CENTER" hgap="20" maxHeight="Infinity" maxWidth="Infinity" prefColumns="2" prefTileHeight="200" prefTileWidth="250" style="-fx-padding: 20;" vgap="20">
+
+         <VBox fx:id="cardioTile" alignment="CENTER" onMouseClicked="#onCardio" prefHeight="200" prefWidth="250" spacing="10" styleClass="card">
+
+            <ImageView fx:id="cardio" fitWidth="160" preserveRatio="true" />
+            <Label styleClass="mid-h2" text="CARDIO" />
+         </VBox>
+
+         <VBox fx:id="weightsTile" alignment="CENTER" onMouseClicked="#onWeights" prefHeight="200" prefWidth="250" spacing="10" styleClass="card">
+
+            <ImageView fx:id="weights" fitWidth="160" preserveRatio="true" />
+            <Label styleClass="mid-h2" text="WEIGHTLIFTING" />
+         </VBox>
+
+         <VBox fx:id="calisthenicsTile" alignment="CENTER" onMouseClicked="#onCalisthenics" prefHeight="200" prefWidth="250" spacing="10" styleClass="card">
+
+            <ImageView fx:id="calisthenics" fitWidth="160" preserveRatio="true" />
+            <Label styleClass="mid-h2" text="CALISTHENICS" />
+         </VBox>
+
+         <VBox fx:id="yogaTile" alignment="CENTER" onMouseClicked="#onYoga" prefHeight="200" prefWidth="250" spacing="10" styleClass="card">
+
+            <ImageView fx:id="yoga" fitWidth="160" preserveRatio="true" />
+            <Label styleClass="mid-h2" text="YOGA" />
+         </VBox>
+
+      </TilePane>
+   </center>
+
+</BorderPane>

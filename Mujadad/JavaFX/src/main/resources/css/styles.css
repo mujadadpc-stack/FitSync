@@ -1,0 +1,41 @@
+@import "themes.css";
+
+.duration-btn {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 12 24 12 24;
+    -fx-cursor: hand;
+}
+
+.back-btn {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-padding: 5 10 5 10;
+    -fx-cursor: hand;
+}
+
+.duration-btn:hover, .back-btn:hover {
+    -fx-background-color: rgba(120, 80, 220, 0.5);
+    -fx-border-color: rgba(160, 120, 255, 0.8);
+    /*-fx-translate-y: -3px;*/
+    /* transition: -fx-background-color: rgba(120, 80, 220, 0.5) 0.2s ease-out,*/
+    /*             -fx-border-color: rgba(160, 120, 255, 0.8) 0.2s ease-out,*/
+    /*             -fx-translate-y: -4px 0.4s cubic-bezier(0.25, 0.1, 0.25, 1.0);*/
+}
+
+.duration-btn:pressed, .back-btn:pressed {
+    -fx-background-color: rgba(120, 80, 220, 0.8);
+    -fx-scale-x: 0.92;
+    -fx-scale-y: 0.92;
+    /*transition: -fx-background-color: rgba(120, 80, 220, 0.8) 0.2s ease-out,*/
+    /*            -fx-scale-x: 0.92 0.2s ease-in-out,*/
+    /*            -fx-scale-y: 0.92 0.2s ease-in-out;*/
+}

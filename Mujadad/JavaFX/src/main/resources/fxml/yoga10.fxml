@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.media.MediaView?>
+<BorderPane prefHeight="650" prefWidth="1000" styleClass="root" stylesheets="@../css/workout.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.Yoga">
+
+    <!-- ================= TOP BAR ================= -->
+
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="20" styleClass="top-bar">
+
+
+
+            <padding>
+                <Insets bottom="15" left="20" right="20" top="15" />
+            </padding>
+
+            <Button fx:id="backButton" onAction="#backToYoga" styleClass="back-button" text="← Back" />
+
+            <Region HBox.hgrow="ALWAYS" />
+
+            <VBox alignment="CENTER">
+                <Label fx:id="categoryLabel" styleClass="title-label" text="YOGA" />
+                <Label fx:id="durationLabel" styleClass="subtitle-label" text="10 MIN OF MINDFULNESS" />
+            </VBox>
+
+            <Region HBox.hgrow="ALWAYS" />
+
+        </HBox>
+    </top>
+
+    <!-- ================= CENTER ================= -->
+    <center>
+
+        <VBox alignment="CENTER" spacing="25" styleClass="center-container">
+            <padding>
+                <Insets bottom="30" left="40" right="40" top="30" />
+            </padding>
+
+
+
+            <HBox alignment="CENTER_LEFT" spacing="30">
+
+                <StackPane prefHeight="220" prefWidth="320" styleClass="image-card">
+                    <MediaView fx:id="yoga10minMediaView" fitHeight="220" fitWidth="320" preserveRatio="false" />
+                </StackPane>
+
+                <Region HBox.hgrow="ALWAYS" />
+
+                <VBox alignment="CENTER" maxWidth="340" prefHeight="220" prefWidth="320" spacing="10" styleClass="exercise-card">
+
+                    <Label style="-fx-font-weight: bold;" styleClass="small-heading" text="Quote Of the Day:" />
+
+                    <Label fx:id="quoteLabel" styleClass="yoga-quote" text="You don't get stress from doing work, you get stress when you avoid the work you are supposed to do." textAlignment="CENTER" wrapText="true" VBox.vgrow="ALWAYS" />
+
+                </VBox>
+
+            </HBox>
+
+            <StackPane prefHeight="80" prefWidth="180" styleClass="timer-container">
+                <Label fx:id="timerLabel10min" style="-fx-text-fill: #ff22ff;" styleClass="timer-label" text="10:00" />
+            </StackPane>
+
+        </VBox>
+
+    </center>
+
+    <!-- ================= BOTTOM CONTROLS ================= -->
+    <bottom>
+        <HBox alignment="CENTER" spacing="30" styleClass="bottom-controls">
+            <padding>
+                <Insets bottom="30" left="20" right="20" top="20" />
+            </padding>
+
+            <Button fx:id="yoga10minStartButton" style="-fx-background-color: #ff22ff" onAction="#start10min" styleClass="control-button" text="START" />
+            <Button fx:id="yoga10minPauseButton" style="-fx-background-color: #ff22ff" onAction="#pause10min" styleClass="control-button" text="PAUSE" />
+            <Button fx:id="yoga10minStopButton" style="-fx-background-color: #ff22ff" onAction="#stop10min" styleClass="control-button" text="RESET" />
+        </HBox>
+    </bottom>
+
+</BorderPane>
+

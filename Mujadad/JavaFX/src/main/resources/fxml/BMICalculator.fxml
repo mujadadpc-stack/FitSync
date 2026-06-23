@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="bmiRoot" stylesheets="@../css/hello-view.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.BMICalculator">
+
+   <children>
+      <VBox alignment="BASELINE_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5">
+         <children>
+            <Label text="BMI Calculator" styleClass="bmi-h1" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10">
+               <children>
+                  <Label text="Enter your Weight:" styleClass="bmi-p1" />
+                  <TextField fx:id="weightField" styleClass="bmi-t1" promptText="in Kilograms" />
+               </children>
+            </HBox>
+
+
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="600.0" spacing="10">
+               <children>
+                  <Label text="Enter your Height:" styleClass="bmi-p2" />
+                  <TextField fx:id="heightField" styleClass="bmi-t2" promptText="in centimeters" />
+               </children>
+            </HBox>
+
+            <HBox prefHeight="50.0" prefWidth="200.0" spacing="80">
+               <children>
+                  <Region prefHeight="64.0" prefWidth="290.0" />
+                  <Button fx:id="calculateButton" text="Calculate" styleClass="bmi-btn" mnemonicParsing="false" onAction="#onCalculate" />
+               </children>
+            </HBox>
+
+            <Label fx:id="calculateBMI" styleClass="bmi-result-title">
+               <font>
+                  <Font name="Courier New" size="14.0" />
+               </font>
+            </Label>
+
+            <Label fx:id="currentBMI" styleClass="bmi-result-value">
+               <font>
+                  <Font name="Courier New" size="26.0" />
+               </font>
+            </Label>
+
+            <Label fx:id="rangeBMI" styleClass="bmi-result-range">
+               <font>
+                  <Font name="Courier New" size="13.0" />
+               </font>
+            </Label>
+
+         </children>
+      </VBox>
+   </children>
+</StackPane>

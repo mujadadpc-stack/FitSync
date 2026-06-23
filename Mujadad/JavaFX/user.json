@@ -1,0 +1,62 @@
+[
+  {
+    "username": "SNK",
+    "password": "snkking",
+    "age": 18,
+    "gender": "Male",
+    "weight": 65.0,
+    "heightincm": 154.0,
+    "calories": 0.0,
+    "stepsTaken": 0
+  },
+  {
+    "username": "Admin",
+    "password": "admin",
+    "age": 21,
+    "gender": "Male",
+    "weight": 21.0,
+    "heightincm": 156.0,
+    "calories": 0.0,
+    "stepsTaken": 0
+  },
+  {
+    "username": "Aaiza",
+    "password": "aaify",
+    "age": 23,
+    "gender": "Female",
+    "weight": 54.0,
+    "heightincm": 158.0,
+    "calories": 0.0,
+    "stepsTaken": 0
+  },
+  {
+    "username": "hxmza",
+    "password": "244466666",
+    "age": 19,
+    "gender": "Male",
+    "weight": 65.0,
+    "heightincm": 160.0,
+    "calories": 0.0,
+    "stepsTaken": 0
+  },
+  {
+    "username": "admin",
+    "password": "admin",
+    "age": 23,
+    "gender": "Female",
+    "weight": 54.0,
+    "heightincm": 160.0,
+    "calories": 700.0,
+    "stepsTaken": 7000
+  },
+  {
+    "username": "bashi_jaan",
+    "password": "123456",
+    "age": 19,
+    "gender": "Male",
+    "weight": 68.0,
+    "heightincm": 175.0,
+    "calories": 0.0,
+    "stepsTaken": 0
+  }
+]

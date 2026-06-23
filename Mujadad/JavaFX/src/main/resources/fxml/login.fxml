@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="rootPane" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.LoginController">
+
+   <children>
+
+      <ImageView fx:id="bgImage" preserveRatio="false" />
+
+      <Pane fx:id="overlay" style="-fx-background-color: rgba(0,0,0,0.45);" />
+
+      <VBox maxWidth="368.0" prefHeight="290.0" prefWidth="368.0" spacing="12" style="-fx-background-color: rgba(255,255,255,0.12);                      -fx-padding: 25;                      -fx-background-radius: 15;">
+
+         <Label alignment="CENTER" style="-fx-font-size: 28px; -fx-text-fill: white;-fx-font-weight: bold;" text="FitSync" />
+
+         <Label style="-fx-text-fill: white;" text="Username" />
+
+         <TextField fx:id="usernameInput" promptText="Enter username" />
+
+         <Label style="-fx-text-fill: white;" text="Password" />
+
+         <PasswordField fx:id="passwordInput" promptText="Enter password" />
+
+         <HBox spacing="30">
+
+            <Button fx:id="login" onAction="#onLogin" style="-fx-background-color: #ff4b2b; fx-text-fill: white;" text="Login" />
+            <Button fx:id="signup" onAction="#onSignup" style="-fx-background-color: #ff4b2b; fx-text-fill: white;" text="Sign Up" />
+
+         </HBox>
+         <Label fx:id="status" />
+
+      </VBox>
+
+   </children>
+</StackPane>

@@ -1,0 +1,47 @@
+
+.spinner-container {
+    -fx-alignment: center;
+    -fx-padding: 20;
+}
+
+
+.loading-ring {
+    -fx-min-width: 64px;
+    -fx-min-height: 64px;
+    -fx-max-width: 64px;
+    -fx-max-height: 64px;
+    -fx-border-radius: 50%;
+    -fx-border-color: rgba(255,255,255,0.15) rgba(255,255,255,0.15)
+                      rgba(255,255,255,0.15) #00e5ff;
+    -fx-border-width: 5px;
+    -fx-background-radius: 50%;
+    -fx-background-color: transparent;
+}
+
+
+.loading-ring:hover {
+    -fx-border-color: rgba(255,255,255,0.15) rgba(255,255,255,0.15)
+                      rgba(255,255,255,0.15) #ff4081;
+}
+
+
+.logo-label {
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, #00e5ff, 12, 0.6, 0, 0);
+    -fx-opacity: 1;
+}
+
+.loading-text {
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 12px;
+    -fx-text-fill: rgba(255,255,255,0.55);
+    -fx-letter-spacing: 3px;
+}
+
+.splash-root {
+    -fx-background-color: #0d0d0d;
+    -fx-alignment: center;
+}
